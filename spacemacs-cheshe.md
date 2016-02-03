@@ -1,3 +1,21 @@
+## Useful Spacemacs commands
+
+- `SPC q q` - quit
+- `SPC w /` - split window vertically
+- `SPC w` - - split window horizontally
+- `SPC 1`   - switch to window 1
+- `SPC 2`   - switch to window 2
+- `SPC w c` - delete current window
+- `SPC TAB` - switch to previous buffer
+- `SPC b b` - switch buffers
+- `SPC f f` - find a file
+- `SPC f s` - save a file (:w also works)
+- `SPC p p` - open project
+- `SPC p h` - find a file in current project
+- `SPC b d` - kill current buffer
+- `SPC b M` - move buffer to another window
+- `SPC v`   - enter expand-region mode
+- 
 - `SPC b b` - Helm mini; lists buffers & recent files
   - `CTRL SPC` - Mark Items
   - `CTRL z` - Actions
@@ -65,23 +83,6 @@
 - `C-p` - make-and-goto-prev-match
 - `grp` - skip-and-goto-prev-match
 
-## Useful Spacemacs commands
-
-- `SPC q q` - quit
-- `SPC w /` - split window vertically
-- `SPC w` - - split window horizontally
-- `SPC 1`   - switch to window 1
-- `SPC 2`   - switch to window 2
-- `SPC w c` - delete current window
-- `SPC TAB` - switch to previous buffer
-- `SPC b b` - switch buffers
-- `SPC f f` - find a file
-- `SPC f s` - save a file (:w also works)
-- `SPC p p` - open project
-- `SPC p h` - find a file in current project
-- `SPC b d` - kill current buffer
-- `SPC b M` - move buffer to another window
-- `SPC v`   - enter expand-region mode
 
 ## Useful Vim key bindings
 
