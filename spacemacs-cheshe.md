@@ -46,12 +46,9 @@
 - `SPC h d f` - help describe functions
 - `SPC h d v` - help describe variables
 - `SPC f e h` - help
-
 - `ALT /` - snippet completion
-
 - `SPC t s` - syntax checking
 - `SPC e` - syntax checking options
-
 - `SPC a r` - ranger
 - `SPC a d` - deer
 
