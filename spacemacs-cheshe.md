@@ -75,10 +75,8 @@
 
 ## Eyebrowse
 
-
-| Key Binding                               | Description                        |
-|-------------------------------------------+------------------------------------|
-| ~gt~                                      | go to next workspace               |
+- ~gt~ - go to next workspace
+- 
 | ~gT~                                      | got to previous workspace          |
 | ~SPC l w 1~                               | create or switch to workspace 1    |
 | ~SPC l w 2~                               | create or switch to workspace 2    |
