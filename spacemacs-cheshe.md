@@ -75,6 +75,7 @@
 
 ## Eyebrowse
 
+
 | Key Binding                               | Description                        |
 |-------------------------------------------+------------------------------------|
 | ~gt~                                      | go to next workspace               |
@@ -95,6 +96,7 @@
 | ~SPC l w N~ or ~SPC l w p~ or ~SPC l w h~ | switch to previous workspace       |
 | ~SPC l w r~                               | set a tag to the current workspace |
 | ~SPC l w w~                               | switched to tagged workspace       |
+
 
 ## Useful Vim key bindings
 
