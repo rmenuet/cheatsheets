@@ -85,6 +85,32 @@
 - `SPC l w r` - set a tag to the current workspace
 - `SPC l w w` - switched to tagged workspace
 
+Find/Replace Commands
+
+Interactive Find/Replace
+
+Here are the most useful find/replace commands. These are also under the menu 〖Edit ▸ Replace〗.
+
+Command Name	Key	Target	Purpose
+query-replace	【Alt+%】	active region, or cursor point to end	interactive find/replace
+query-replace-regexp	【Ctrl+Alt+%】	active region, or cusor point to end	interactive find/replace with regex pattern
+dired-do-query-replace-regexp	In dired, 【Q】.	marked files in dired	interactive find/replace on multiple files
+For example, call query-replace, then type your search string, then type your replacement string.
+
+When a query command asks you for confirmation, here's the most common keys:
+
+y → do the replacement.
+n → skip
+! → do this and all remaining replacements without asking.
+【Ctrl+g】 → cancel. (call undo to undo existing replacement.)
+For detail on using dired-do-query-replace-regexp, see: Emacs: Interactively Find/Replace Text in Directory.
+
+Batch Replace
+
+replace-string → find ＆ replace in one shot, without asking for each. From cursor position to end of buffer, or, in a text selection.
+
+replace-regexp → same as replace-string but with regex.
+
 ## Useful Vim key bindings
 
 ### movement
