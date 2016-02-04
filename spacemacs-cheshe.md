@@ -75,26 +75,15 @@
 
 ## Eyebrowse
 
-- ~gt~ - go to next workspace
-- 
-| ~gT~                                      | got to previous workspace          |
-| ~SPC l w 1~                               | create or switch to workspace 1    |
-| ~SPC l w 2~                               | create or switch to workspace 2    |
-| ~SPC l w 3~                               | create or switch to workspace 3    |
-| ~SPC l w 4~                               | create or switch to workspace 4    |
-| ~SPC l w 5~                               | create or switch to workspace 5    |
-| ~SPC l w 6~                               | create or switch to workspace 6    |
-| ~SPC l w 7~                               | create or switch to workspace 7    |
-| ~SPC l w 8~                               | create or switch to workspace 8    |
-| ~SPC l w 9~                               | create or switch to workspace 9    |
-| ~SPC l w 0~                               | create or switch to workspace 0    |
-| ~SPC l w TAB~                             | switch to last active workspace    |
-| ~SPC l w c~                               | close current workspace            |
-| ~SPC l w n~ or ~SPC l w l~                | switch to next workspace           |
-| ~SPC l w N~ or ~SPC l w p~ or ~SPC l w h~ | switch to previous workspace       |
-| ~SPC l w r~                               | set a tag to the current workspace |
-| ~SPC l w w~                               | switched to tagged workspace       |
-
+- `gt` - go to next workspace
+- `gT` - go to previous workspace
+- `SPC l w n` - create or switch to workspace n
+- `SPC l w TAB` - switch to last active workspace
+- `SPC l w c` - close current workspace
+- `SPC l w n` or `SPC l w l` - switch to next workspace
+- `SPC l w N` or `SPC l w p` or `SPC l w h` - switch to previous workspace
+- `SPC l w r` - set a tag to the current workspace
+- `SPC l w w` - switched to tagged workspace
 
 ## Useful Vim key bindings
 
