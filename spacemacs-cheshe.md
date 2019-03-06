@@ -5,7 +5,7 @@
 - `SPC w` - - split window horizontally
 - `SPC 1`   - switch to window 1
 - `SPC 2`   - switch to window 2
-- `SPC w c` - delete current window
+- `SPC w d` - delete current window
 - `SPC TAB` - switch to previous buffer
 - `SPC b b` - switch buffers
 - `SPC f f` - find a file
@@ -95,33 +95,34 @@
   
 ## Git
 
-SPC g b	open a magit blame
-SPC g B	quit magit blame
-SPC g c	commit changes
-SPC g C	checkout branches
-SPC g d	show diff prompt
-SPC g D	show diff against current head
-SPC g e	show ediff comparison
-SPC g E	show ediff against current head
-SPC g f	show fetch prompt
-SPC g F	show pull prompt
-SPC g H c	clear highlights
-SPC g H h	highlight regions by age of commits
-SPC g H t	highlight regions by last updated time
-SPC g i	git init a given directory
-SPC g I	open helm-gitignore
-SPC g l	open a magit log
-SPC g L	display the log for a file
-SPC g P	show push prompt
-SPC g s	open a magit status window
-SPC g S	stage current file
-SPC g m	display the last commit message of the current line
-SPC g t	launch the git time machine
-SPC g U	unstage current file
-Highlight by age of commit or last update time is provided by smeargle.
-Git time machine is provided by git-timemachine.
-Git last commit message per line is provided by git-messenger.
-3.1 Magit
+- `SPC g b`	open a magit blame
+- `SPC g B`	quit magit blame
+- `SPC g c`	commit changes
+- `SPC g C`	checkout branches
+- `SPC g d`	show diff prompt
+- `SPC g D`	show diff against current head
+- `SPC g e`	show ediff comparison
+- `SPC g E`	show ediff against current head
+- `SPC g f`	show fetch prompt
+- `SPC g F`	show pull prompt
+- `SPC g H c`	clear highlights
+- `SPC g H h`	highlight regions by age of commits
+- `SPC g H t`	highlight regions by last updated time
+- `SPC g i`	git init a given directory
+- `SPC g I`	open helm-gitignore
+- `SPC g l`	open a magit log
+- `SPC g L`	display the log for a file
+- `SPC g P`	show push prompt
+- `SPC g s`	open a magit status window
+- `SPC g S`	stage current file
+- `SPC g m`	display the last commit message of the current line
+- `SPC g t`	launch the git time machine
+- `SPC g U`	unstage current file
+- Highlight by age of commit or last update time is provided by smeargle.
+- Git time machine is provided by git-timemachine.
+- Git last commit message per line is provided by git-messenger.
+
+### Magit
 
 Spacemacs uses magit to manage Git repositories.
 
@@ -132,104 +133,109 @@ Spacemacs uses evil-magit for key bindings in magit buffers (unless your editing
 Here are the often used bindings inside a status buffer:
 
 Key Binding	Description
-/	evil-search
-$	open command output buffer
-c c	open a commit message buffer
-b b	checkout a branch
-b c	create a branch
-f f	fetch changes
-F (r) u	pull tracked branch and rebase
-gr	refresh
-j	goto next magit section
-C-j	next visual line
-k	goto previous magit section
-C-k	previous visual line
-l l	open log buffer
-n	next search occurrence
-N	previous search occurrence
-o	revert item at point
-P u	push to tracked branch
-P m	push to matching branch (e.g., upstream/develop to origin/develop)
-q	quit
-s	on a file or hunk in a diff: stage the file or hunk
-x	discard changes
-+	on a hunk: increase hunk size
--	on a hunk: decrease hunk size
-S	stage all
-TAB	on a file: expand/collapse diff
-u	on a staged file: unstage
-U	unstage all staged files
-v or V	select multiple lines
-z z	stash changes
-3.2 Staging lines
+
+- /	evil-search
+- $	open command output buffer
+- c c	open a commit message buffer
+- b b	checkout a branch
+- b c	create a branch
+- f f	fetch changes
+- F (r) u	pull tracked branch and rebase
+- gr	refresh
+- j	goto next magit section
+- C-j	next visual line
+- k	goto previous magit section
+- C-k	previous visual line
+- l l	open log buffer
+- n	next search occurrence
+- N	previous search occurrence
+- o	revert item at point
+- P u	push to tracked branch
+- P m	push to matching branch (e.g., upstream/develop to origin/develop)
+- q	quit
+- s	on a file or hunk in a diff: stage the file or hunk
+- x	discard changes
+- +	on a hunk: increase hunk size
+- -	on a hunk: decrease hunk size
+- S	stage all
+- TAB	on a file: expand/collapse diff
+- u	on a staged file: unstage
+- U	unstage all staged files
+- v or V	select multiple lines
+- z z	stash changes
+
+### Staging lines
 
 Magit allows you to stage specific lines by selecting them in a diff and hitting s to stage. Due to inconsistencies between Vim and Emacs editing styles, if you enter visual line state with V, you will stage one more line than intended. To work around this, you can use v instead (since Magit only stages whole lines, in any case).
 
-3.3 Commit message editing buffer
+### Commit message editing buffer
 
 In a commit message buffer press ~,c~ (if dotspacemacs-major-mode-leader-key is ~,~) or C-c C-c to commit the changes with the entered message. Pressing ~,a~ or C-c C-k will discard the commit message.
 
-Key Binding	Description
-h	go left
-j	go down
-k	go up
-l	go right
-3.4 Interactive rebase buffer
+### Interactive rebase buffer
 
 Key Binding	Description
-c or p	pick
-e	edit
-f	fixup
-j	go down
-gj	move line down
-k	go up
-gk	move line up
-d or x	kill line
-r	reword
-s	squash
-u	undo
-y	insert
-!	execute
-3.5 Quick guide for recurring use cases in Magit
+
+- c or p	pick
+- e	edit
+- f	fixup
+- j	go down
+- gj	move line down
+- k	go up
+- gk	move line up
+- d or x	kill line
+- r	reword
+- s	squash
+- u	undo
+- y	insert
+- !	execute
+
+### Quick guide for recurring use cases in Magit
 
 Amend a commit:
-l l to open log buffer
-c a on the commit you want to amend
-~,c~ or C-c C-c to submit the changes
+- l l to open log buffer
+- c a on the commit you want to amend
+- ~,c~ or C-c C-c to submit the changes
+
 Squash last commit:
-l l to open log buffer
-r e on the second to last commit, it opens the rebase buffer
-j to put point on last commit
-s to squash it
-~,c~ or C-c C-c to continue to the commit message buffer
-~,c~ or C-c C-c again when you have finished to edit the commit message
+- l l to open log buffer
+- r e on the second to last commit, it opens the rebase buffer
+- j to put point on last commit
+- s to squash it
+- ~,c~ or C-c C-c to continue to the commit message buffer
+- ~,c~ or C-c C-c again when you have finished to edit the commit message
+
 Force push a squashed commit:
-in the status buffer you should see the new commit unpushed and the old commit unpulled
-P -f P for force a push (beware usually it is not recommended to rewrite the history of a public repository, but if you are sure that you are the only one to work on a repository it is ok - i.e. in your fork).
+- in the status buffer you should see the new commit unpushed and the old commit unpulled
+- P -f P for force a push (beware usually it is not recommended to rewrite the history of a public repository, but if you are sure that you are the only one to work on a repository it is ok - i.e. in your fork).
+
 Add upstream remote (the parent repository you have forked):
-M to open the remote popup
-a to add a remote, type the name (i.e. upstream) and the URL
+- M to open the remote popup
+- a to add a remote, type the name (i.e. upstream) and the URL
+
 Pull changes from upstream (the parent repository you have forked) and push:
-F -r C-u F and choose upstream or the name you gave to it
-P P to push the commit to origin
-3.6 Git-Flow
+- F -r C-u F and choose upstream or the name you gave to it
+- P P to push the commit to origin
+
+### Git-Flow
 
 magit-gitflow provides git-flow commands in its own magit menu.
 
 Key Binding	Description
-%	open magit-gitflow menu
-3.7 Git time machine
+- %	open magit-gitflow menu
+
+### Git time machine
 
 git-timemachine allows to quickly browse the commits of the current buffer.
 
 Key Binding	Description
-SPC g t	start git timemachine and initiate micro-state
-c	show current commit
-n	show next commit
-N	show previous commit
-p	show previous commit
-q	leave micro-state and git timemachine
-Y	copy current commit hash
+- SPC g t	start git timemachine and initiate micro-state
+- c	show current commit
+- n	show next commit
+- N	show previous commit
+- p	show previous commit
+- q	leave micro-state and git timemachine
+- Y	copy current commit hash
 
 
 ## Useful Vim key bindings
