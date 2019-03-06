@@ -11,8 +11,8 @@
 - `G` - last line
 - `C-u` - up half page
 - `C-d` - down half page
-- `f/` - move forward to first "/" character
-- `t/` - move forward right before the first "/" character
+- `f/` - move forward to first "/" character (in the line)
+- `t/` - move forward right before the first "/" character (in the line)
 - `;` - repeat that command again
 - `H` - head of the screen
 - `M` - middle of the screen
@@ -30,6 +30,7 @@
 - ``a` - after moving around, go back to the exact position of marker "a"
 - `'a` - after moving around, go back to line of marker "a"
 - `:marks` - view all the marks
+- `:/xxx` - highlight xxx occurrences and move to next one (`n` next and `N` previous)
 - `''` - go to the last place you were
 
 ## editing
