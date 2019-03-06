@@ -1,8 +1,10 @@
+Borrowed and adapted from https://gist.github.com/robphoenix/9e4db767ab5c912fb558
+
 ## Useful Spacemacs commands
 
 - `SPC q q` - quit
 - `SPC w /` - split window vertically
-- `SPC w` - - split window horizontally
+- `SPC w`   - split window horizontally
 - `SPC 1`   - switch to window 1
 - `SPC 2`   - switch to window 2
 - `SPC w d` - delete current window
